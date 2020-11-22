@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\mszko\Repos\PartKeeper-Frontend\src\polyfills.ts */"hN/g");
+module.exports = __webpack_require__(/*! C:\Users\mszko\Repos\PartKeeper\app\src\polyfills.ts */"hN/g");
 
 
 /***/ }),
