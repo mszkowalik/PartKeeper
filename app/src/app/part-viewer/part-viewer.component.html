@@ -1,0 +1,10 @@
+    <div *ngFor="let item of getObjectProperties()">
+     
+        <mat-form-field class="example-full-width">
+            <mat-label>{{item}}</mat-label>
+            <input matInput [(ngModel)]="partData[item]" >
+          </mat-form-field>
+
+    </div>
+
+    <button *ngIf="getObjectProperties()" (click)=save()>Save</button>

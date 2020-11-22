@@ -1,0 +1,5 @@
+<app-part-selector (selectedPartNumber)="selectedPartNumber($event)"> </app-part-selector>
+<app-part-viewer [part]="currentPartNumber" [mode]="'adjustStock'" (EditedPartData)="updatedPartData($event)"></app-part-viewer>
+<tr *ngFor="let item of history">
+{{item}}
+</tr>

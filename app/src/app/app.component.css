@@ -1,0 +1,36 @@
+p {
+  font-family: Lato;
+}
+
+.top-bar {
+  width: 100%;
+  height: 68px;
+  background-color: #1976d2;
+  padding: 16px;
+  flex-direction: row;
+  justify-content: space-between center;
+  align-items: center;
+  display: flex;
+  flex-grow: grow;
+}
+.top-bar h1 {
+  color: white;
+  margin: 0;
+}
+
+.top-bar mat-icon {
+  color: white;
+  margin: 0;
+}
+
+.sidenav-list {
+  max-width: 25%;
+}
+
+.sidenav-content {
+  float: left;
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  position: relative;
+}

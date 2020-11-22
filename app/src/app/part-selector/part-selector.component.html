@@ -1,0 +1,20 @@
+<form class="autocomplete-form">
+	<button (click)="handleClearBox()">X</button>
+	<mat-form-field>
+		<input
+			type="text"
+			placeholder="Part Number"
+			aria-label="Number"
+			matInput
+			[formControl]="myControl"
+			[matAutocomplete]="auto"
+		/>
+	
+		<mat-autocomplete #auto="matAutocomplete" (optionSelected)="this.selectedComponent($event.option.value)">
+			<mat-option *ngFor="let option of filteredComponens | async" [value]="option">
+				{{option}}
+			</mat-option>
+		</mat-autocomplete>
+	</mat-form-field>
+
+</form>

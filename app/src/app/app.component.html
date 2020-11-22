@@ -1,0 +1,20 @@
+<div class="top-bar">
+	<button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+	<app-top-bar> </app-top-bar>
+</div>
+
+
+<mat-sidenav-container class="sidenav-container">
+	<mat-sidenav class="sidenav-list" #sidenav mode="side" opened="true" role="navigation">
+		<mat-list>
+			<a mat-list-item [routerLink]="[link.address]" *ngFor='let link of linkList'> {{ link.name }} </a>
+		</mat-list>
+	</mat-sidenav>
+
+	<mat-sidenav-content class="sidenav-content">
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+
+</mat-sidenav-container>
