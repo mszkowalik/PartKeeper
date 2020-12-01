@@ -3,5 +3,5 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-functions
-olefile==0.46
+#olefile==0.46
 mysql-connector-python==8.0.21
