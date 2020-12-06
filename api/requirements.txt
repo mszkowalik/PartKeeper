@@ -3,4 +3,4 @@
 # Manually managing azure-functions-worker may cause unexpected issues
 
 azure-function
-mysql-connector-python==8.0.21
+mysql-connector-python
