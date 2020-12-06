@@ -44,8 +44,8 @@ export class ComponentsService {
   }
   private getPartsList() {
     this.http
-      // .get(environment.apiUrl + "/getPartsList")
-      .get("api/getPartsList")
+      .get(environment.apiUrl + "/getPartsList")
+      //.get("api/getPartsList")
       .subscribe((data: string[]) => {
         this.componentsSubscription.next(data);
         this.components = data;
@@ -55,10 +55,10 @@ export class ComponentsService {
   private getPart(partNumber: string) {
     const formData = new FormData();
     formData.append("PartNumber", partNumber);
-    // this.http
-    //   .post(environment.apiUrl + "/getPart", formData)
-    //   .subscribe((data: any) => {
-    //     this.partSubscription.next(data);
-    //   });
+    this.http
+       .post(environment.apiUrl + "/getPart", formData)
+       .subscribe((data: any) => {
+         this.partSubscription.next(data);
+       });
   }
 }
