@@ -55,10 +55,10 @@ export class ComponentsService {
   private getPart(partNumber: string) {
     const formData = new FormData();
     formData.append("PartNumber", partNumber);
-    this.http
-       .post(environment.apiUrl + "/getPart", formData)
-       .subscribe((data: any) => {
-         this.partSubscription.next(data);
-       });
+    // this.http
+    //    .post(environment.apiUrl + "/getPart", formData)
+    //    .subscribe((data: any) => {
+    //      this.partSubscription.next(data);
+    //    });
   }
 }
